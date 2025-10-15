@@ -17,7 +17,7 @@ module clk_div_1khz_humid (
         end else begin
             if (r_counter == DIV - 1) begin
                 r_counter  <= 0;
-                r_clk_1khz <= 1'b1; // 1?��?�� ?��?��
+                r_clk_1khz <= 1'b1;
             end else begin
                 r_counter  <= r_counter + 1;
                 r_clk_1khz <= 1'b0;
